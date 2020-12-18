@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mes todolists</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Mes Todolists </h1>
+    <div class ="container">
+        <div id="lists">
+            <h2>Mes listes : </h2>
+            <ul id="myLists">
+                <li class="active" id="liste1" onclick="showTasks()">liste1</li>
+                <li id="liste2" onclick="showTasks()">liste 2 </li>
+
+            </ul>
+
+            <label for="newListName">Nouvelle liste : </label>
+            <input type="text" id="newListName" name="newListName">
+            <br>
+            <button onclick="addList()"> Ajouter la liste </button>
+
+
+        </div>
+
+        <div id="tasks">
+            <h2>Tâches :</h2>
+
+
+            <label for="newtask">Nouvelle tâche : </label>
+            <input type="text" id="newtask" name="newtask">
+            <button onclick="addTask()"> Ajouter la tâche </button>
+
+            <ul id="listoftasks">
+                <div class="listContent active" id="tasksliste1">
+                    <li><p>tâche 1</p> <p class="deletebutton">X</p></li>
+                    <li>tâche 2 </li>
+                    <li>tâche 3 </li>
+                    <li>tâche 4 </li>
+                </div>
+                <div class="listContent" id="tasksliste2">
+                    <li>tâche 5 </li>
+                    <li>tâche 6 </li>
+                    <li>tâche 7 </li>
+                    <li>tâche 8 </li>
+                </div>
+            </ul>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>

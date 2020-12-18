@@ -1,0 +1,69 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    boder :  4mm ridge rgba(170, 50, 220, .6);
+    padding : 10px;
+    margin : 50px;
+    background : rgba(0,0,100,0.1);
+    border : solid #000 0.1em;
+    text-align : center;
+    line-height : 1.5em
+}
+
+h1 {
+    text-align : center
+}
+
+#lists, #tasks {
+    padding : 1em;
+}
+#lists ul, #tasks ul {
+    padding-left: 0;
+
+}
+
+#lists li, #tasks li {
+    list-style:none;
+    margin-left:0;
+    padding-left:0;
+
+}
+
+#newListName , #newtask {
+    border-radius : 10px;
+}
+#lists {
+    border : solid #000 0.1em;
+}
+
+
+.listContent {
+    display : none;
+    text-align : left;
+
+
+}
+
+.listContent li {
+    display: flex;
+    flex-direction: row
+
+
+}
+
+.listContent.active{
+    display : block;
+
+}
+#myLists .active{
+    font-weight: bolder;
+}
+.deletebutton
+{
+    color : red;
+    font-size : 1em;
+    background : white;
+    font-weight: bolder;
+    padding : 0 1em
+
+}
